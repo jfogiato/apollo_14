@@ -1,0 +1,9 @@
+<h1> All Astronauts </h1>
+
+<% @astronauts.each do |astronaut| %>
+  <p>
+    Name: <a href="/astronauts/<%= astronaut.id %>"><%= astronaut.name %></a>, 
+    Age: <%= astronaut.age %>, 
+    Job: <%= astronaut.job %>
+  </p>
+<% end %>
